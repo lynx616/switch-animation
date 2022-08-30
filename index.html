@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://e7.pngegg.com/pngimages/732/838/png-clipart-computer-icons-electrical-switches-slider-button-switch-computer-network-rectangle-thumbnail.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Button animmation</title>
+    <link rel="stylesheet" href="switch.css">
+    <!-- <script src="switch.js"></script> -->
+</head>
+<body>
+    <!-- <button class="save-btn"</button> -->
+    <button class="save-btn">
+        Save changes
+    </button>
+    <script>
+       var red_button=document.querySelector(".save-btn");
+
+        red_button.onclick = function(){
+        this.innerHTML="<div class='loader'></div>";
+        setTimeout(()=> {
+            this.innerHTML="Changes saved";
+            this.style="background:white; color:red; pointer-events: none; border: 2px solid red";
+        },2000)
+        }
+        
+    </script>
+</body>
+</html>
